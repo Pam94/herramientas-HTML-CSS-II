@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    "node": "^15.10.0",
     "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }
