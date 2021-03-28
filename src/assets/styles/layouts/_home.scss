@@ -73,9 +73,10 @@ footer {
       display: inline-block;
       padding: 10px;
     }
+
   }
 
-  &__link:hover {
+  &__link--hover:hover {
     background-color: $cv-third-color;
   }
 
@@ -122,6 +123,7 @@ footer {
   }
 
 }
+
 
 
 
