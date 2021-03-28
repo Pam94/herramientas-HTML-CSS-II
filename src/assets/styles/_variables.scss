@@ -12,12 +12,13 @@ $font-family-sans-serif: -apple-system,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$cv-primary-color:   #e4d3cf;
-$cv-secondary-color: #9e9d89;
-$cv-third-color:     #e2bcb7;
-$cv-forth-color:     #b67162;
+$cv-primary-color:   #96CCD9;
+$cv-secondary-color: #212626;
+$cv-third-color:     #D9663D;
+$cv-forth-color:     #8C4830;
 
-$nav-bg:  color.scale($cv-forth-color, $lightness: 40%);
-$main-bg: color.scale($cv-third-color, $lightness: 20%);
-$font-color: color.scale($cv-secondary-color, $blackness: 20%);
+$nav-bg:         color.scale($cv-forth-color, $lightness: 20%);
+$main-bg:        color.scale($cv-third-color, $lightness: 30%);
+$body-bg:      color.scale($cv-primary-color, $lightness: 20%);
+$font-color: color.scale($cv-secondary-color, $blackness: 10%);
 

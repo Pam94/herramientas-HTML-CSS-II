@@ -1,9 +1,18 @@
 body {
-  margin:     0;
-  padding:  3%;
+  margin:       0;
+  padding:     3%;
+  font-size: 18px;
   font-family: $font-family-sans-serif;
-  background-color:  $cv-primary-color;
+  background-color:           $body-bg;
   color:                   $font-color;
+
+  @include media(tablet) {
+    font-size: 14px;
+  }
+
+  @include media(phone) {
+    font-size: 12px;
+  }
 }
 
 
@@ -45,7 +54,7 @@ footer {
   width: 100%;
   background-color: $nav-bg;
 
-  .primary-nav__item {
+  &__item {
     float: left;
 
     @include media(phone) {
@@ -54,7 +63,7 @@ footer {
 
   }
 
-  .primary-nav__link {
+  &__link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -66,7 +75,7 @@ footer {
     }
   }
 
-  .primary-nav__link:hover {
+  &__link:hover {
     background-color: $cv-third-color;
   }
 
@@ -80,29 +89,59 @@ footer {
 
 
 
-img {
-  max-width: 40%;
-  height:   auto;
-}
-
-
-
-
 .section-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  .section-column {
-    flex: 33%;
+  &__column {
+    padding-right: 10%;
+    flex: column-width(3);
 
     @include media(tablet) {
-      flex: 50%;
+      flex: column-width(2);
     }
 
     @include media(phone) {
-      flex: 100%;
+      flex: column-width(1);
     }
 
+  }
+
+}
+
+
+
+
+
+.contact-me {
+  list-style-type: none;
+
+  &__item {
+    padding-bottom: 2%;
+  }
+
+}
+
+
+
+
+.about-me {
+  display: flex;
+
+  &__image {
+    padding-right: 2%;
+    max-width: 35%;
+    height:   auto;
+    align-self: flex-start;
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  @include media(phone) {
+    display: block;
   }
 }
