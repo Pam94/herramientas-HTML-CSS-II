@@ -1,21 +1,108 @@
 body {
-  margin: 0;
-  padding: 30px;
+  margin:     0;
+  padding:  3%;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  background-color:  $cv-primary-color;
+  color:                   $font-color;
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
-}
 
-.uoc-title {
+
+
+
+main {
+  background-color: $main-bg;
+  display: inline-block;
+  width:  100%;
+  padding: 5%;
   font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+
+  @include media(phone) {
+    padding-top: 50%;
+  }
+
+}
+
+
+
+
+
+footer {
+  background-color: $cv-forth-color;
+  width: 100%;
+  height: max-content;
+  padding: 15px;
+}
+
+
+
+
+
+.primary-nav {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $nav-bg;
+
+  .primary-nav__item {
+    float: left;
+
+    @include media(phone) {
+      float: none;
+    }
+
+  }
+
+  .primary-nav__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 15px;
+
+    @include media(phone) {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  .primary-nav__link:hover {
+    background-color: $cv-third-color;
+  }
+
+  @include media(phone) {
+    position: absolute;
+  }
+
+}
+
+
+
+
+
+img {
+  max-width: 40%;
+  height:   auto;
+}
+
+
+
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .section-column {
+    flex: 33%;
+
+    @include media(tablet) {
+      flex: 50%;
+    }
+
+    @include media(phone) {
+      flex: 100%;
+    }
+
+  }
 }

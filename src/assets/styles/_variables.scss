@@ -12,6 +12,12 @@ $font-family-sans-serif: -apple-system,
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$cv-primary-color:   #e4d3cf;
+$cv-secondary-color: #9e9d89;
+$cv-third-color:     #e2bcb7;
+$cv-forth-color:     #b67162;
+
+$nav-bg:  color.scale($cv-forth-color, $lightness: 40%);
+$main-bg: color.scale($cv-third-color, $lightness: 20%);
+$font-color: color.scale($cv-secondary-color, $blackness: 20%);
+

@@ -11,24 +11,28 @@
 
 <body>
 
-  <header class="page-head">
+  <header>
 
-    <nav class="menu">
+    <nav>
+      <ul class="primary-nav">
 
-      <ul>
-
-        <li><a href="#about">About me</a></li>
-
-        <li><a href="#education">Education</a></li>
-
-        <li><a href="#experience">Experience</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#contact">Contact me</a></li>
+        <li class="primary-nav__item">
+          <a class="primary-nav__link" href="#about">About me</a>
+        </li>
+        <li class="primary-nav__item">
+          <a class="primary-nav__link" href="#education">Education</a>
+        </li>
+        <li class="primary-nav__item">
+          <a class="primary-nav__link" href="#experience">Experience</a>
+        </li>
+        <li class="primary-nav__item">
+          <a class="primary-nav__link" href="#skills">Skills</a>
+        </li>
+        <li class="primary-nav__item">
+          <a class="primary-nav__link" href="#contact">Contact me</a>
+        </li>
 
       </ul>
-
     </nav>
 
   </header>
@@ -37,7 +41,7 @@
 
 
 
-  <main class="page-content">
+  <main>
 
     <h1>Pamela Fernández Fernández</h1>
 
@@ -45,9 +49,9 @@
 
       <h2>About Me</h2>
 
-      <!--<img src="" />-->
+      <img src="/src/assets/images/IMG_20170410_115919_787.jpg" />
 
-      <p>Texto sobre mi</p>
+      <!--<p></p>-->
 
     </section>
 
@@ -58,9 +62,7 @@
       <ul>
 
         <li>Bachiller Tecnológico, IES de Tineo, 2010 - 2012</li>
-
         <li>Grado de Ingeniería Informática del Software, Universidad de Oviedo, 2012 - 2018 </li>
-
         <li>Máster en Desarrollo y Aplicaciones Web, Universitat Oberta de Catalunya, 2019 - Actualmente</li>
 
       </ul>
@@ -83,54 +85,51 @@
 
       <h2>Skills</h2>
 
-      <div>
+      <div class="section-row">
 
-        <h3>Habilidades en Programación</h3>
+        <div class="section-column">
 
-        <ul>
+          <h3>Habilidades en Programación</h3>
 
-          <li>Java</li>
+          <ul>
 
-          <li>C++</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>C / C#</li>
+            <li>Ada</li>
+            <li>Javascript</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
 
-          <li>C / C#</li>
+          </ul>
 
-          <li>Ada</li>
+        </div>
 
-          <li>Javascript</li>
+        <div class="section-column">
 
-          <li>SQL</li>
+          <h3>Frameworks</h3>
 
-          <li>HTML</li>
+          <ul>
 
-          <li>CSS</li>
+            <li>QT</li>
+            <li>Angular</li>
 
-        </ul>
+          </ul>
 
-      </div>
+        </div>
 
-      <div>
-        <h3>Frameworks</h3>
+        <div class="section-column">
 
-        <ul>
+          <h3>Idiomas</h3>
 
-          <li>QT</li>
+          <ul>
 
-          <li>Angular</li>
+            <li>Ingés - Nivel B2</li>
 
-        </ul>
+          </ul>
 
-      </div>
-
-      <div>
-
-        <h3>Idiomas</h3>
-
-        <ul>
-
-          <li>Ingés - Nivel B2</li>
-
-        </ul>
+        </div>
 
       </div>
 
@@ -143,9 +142,7 @@
       <ul>
 
         <li>Tel. 685554125</li>
-
         <li>pfernandezfe94@uoc.edu</li>
-
         <li>linkedin.com/in/pamela-fernández-97083816a</li>
 
       </ul>
@@ -158,9 +155,16 @@
 
 
 
-  <footer class="page-foot">
+  <footer>
+
+    <br />
+    <p>Pamela Fernández Fernández, Herramientas HTML & CSS II.</p>
 
   </footer>
+
+
+
+
 
   <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
