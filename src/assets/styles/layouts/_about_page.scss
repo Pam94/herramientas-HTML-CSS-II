@@ -1,0 +1,22 @@
+.about-page {
+  display: block;
+  width: 100%;
+  margin: 150px auto;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+@supports (display: grid) {
+  @media (min-width: 42em) and (min-height: 27em) {
+
+    .about-page__container {
+      display: flex;
+      flex:1;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}

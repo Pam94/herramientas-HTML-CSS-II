@@ -25,7 +25,10 @@
  * It's a best practice to use a different partial for each page
  */
 
+@import "layouts/common";
 @import "layouts/front_page";
+@import "layouts/about_page";
+@import "layouts/article_page";
 
 /**
  * Do NOT include anything else in this file!

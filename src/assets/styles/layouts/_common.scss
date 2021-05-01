@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: $font-family-sans-serif;
+  background-color:           $body-bg;
+  color:                   $font-color;
+
+  @include media(tablet) {
+    font-size: 14px;
+  }
+
+  @include media(phone) {
+    font-size: 12px;
+  }
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+
+  @include media(phone) {
+    flex-direction: column;
+  }
+}
+
+.primary-nav {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+
+  @include media(phone) {
+    flex-direction: column;
+  }
+}
+
+.primary-nav__link {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+
+  @include media(phone) {
+    padding: 10px;
+  }
+
+  &--hover:hover {
+    background-color: $cv-third-color;
+  }
+}
+
+.secondary-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  @include media(phone) {
+    flex-direction: column;
+  }
+
+}
+
+.secondary-nav__item {
+  flex: 3;
+}
+
+.secondary-nav__social {
+  flex: 1;
+}
+
+.secondary-nav__link {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 15px;
+
+  @include media(phone) {
+    padding: 10px;
+  }
+}
