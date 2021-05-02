@@ -1,0 +1,35 @@
+.songs-container{
+  display: block;
+  min-width: 100%;
+}
+
+
+@supports (display: grid) {
+
+  @media (min-width: 42em) and (min-height: 27em) {
+
+    .songs-container{
+      display: grid;
+      max-width: 100%;
+      margin: 150px auto;
+      gap: 1em 1em;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .songs-container__item {
+      background: $secondary-bg-color;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1em;
+      align-items: center;
+      font-weight: 100;
+    }
+
+    .songs-container__item>img {
+      width: 100%;
+    }
+
+  }
+
+}

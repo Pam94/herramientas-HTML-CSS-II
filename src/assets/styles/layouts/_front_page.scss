@@ -15,7 +15,7 @@
 
     .front-page-container {
       display: grid;
-      gap: 25px 15px;
+      gap: 1em 0.5em;
       grid-template-columns: minmax(10px, 1fr) 1fr 2fr 1fr;
       grid-template-rows: 1fr 1fr 2fr 1fr;
     }
