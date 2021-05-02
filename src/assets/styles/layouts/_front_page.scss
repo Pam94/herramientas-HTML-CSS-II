@@ -1,7 +1,6 @@
 .front-page-container {
   display: block;
-  width: 100%;
-  margin: 150px auto;
+  min-width: 100%;
 }
 
 
@@ -12,11 +11,11 @@
 
 @supports (display: grid) {
 
-  //@include media(desktop) {
   @media (min-width: 42em) and (min-height: 27em) {
 
     .front-page-container {
       display: grid;
+      gap: 25px 15px;
       grid-template-columns: minmax(10px, 1fr) 1fr 2fr 1fr;
       grid-template-rows: 1fr 1fr 2fr 1fr;
     }
@@ -25,13 +24,12 @@
       writing-mode:vertical-lr;
       transform:rotate(180deg);
       grid-row: 1 / -1;
-
       align-self: start;
     }
 
     .subtitle {
       grid-column: span 3;
-      align-self: start;
+      align-self: center;
     }
 
     .description {
@@ -44,11 +42,23 @@
       transform:rotate(180deg);
       align-self: flex-start;
       justify-self: start;
+      text-decoration: none;
+      color: black;
     }
 
     .img-cover {
       grid-column: 2 / -1;
       grid-row: 3 / -1;
+    }
+
+    .img-cover__caption {
+      grid-row: 3;
+      grid-column: 2 / span 2;
+    }
+
+    .img-cover__caption > a {
+      text-decoration: none;
+      color: black;
     }
   }
 }

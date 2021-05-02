@@ -11,14 +11,32 @@ $font-family-sans-serif: -apple-system,
   "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
+$font-color: black;
 
-$cv-primary-color:   #96CCD9;
-$cv-secondary-color: #212626;
-$cv-third-color:     #D9663D;
-$cv-forth-color:     #8C4830;
+$bg-color: #ffd1b4;
+$bg-image: linear-gradient(43deg, #ff9759 0%,
+#ffb080 30%, #ffd1b4 66%, #ffe8d9 100%);
+$main-bg-color:rgb(255, 255, 255, 0.3);
+$nav-bg-color: #333;
+$nav-bg-color-hover: #111;
 
-$nav-bg:         color.scale($cv-forth-color, $lightness: 20%);
-$main-bg:        color.scale($cv-third-color, $lightness: 30%);
-$body-bg:      color.scale($cv-primary-color, $lightness: 20%);
-$font-color: color.scale($cv-secondary-color, $blackness: 10%);
+$nav-txt-color: white;
 
+/*
+Photo by <a href="https://unsplash.com/@dann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@sspaula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sergio de Paula</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+Photo by <a href="https://unsplash.com/@christianbuehner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">christian buehner</a> on <a href="https://unsplash.com/s/photos/man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+Photo by <a href="https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ayo Ogunseinde</a> on <a href="https://unsplash.com/s/photos/man?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+Photo by <a href="https://unsplash.com/@theranaman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raj Rana</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+Photo by <a href="https://unsplash.com/@clar_san?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clarke Sanders</a> on <a href="https://unsplash.com/s/photos/person?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+  
+ Photo by <a href="https://unsplash.com/@john_matychuk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">John Matychuk</a> on <a href="https://unsplash.com/s/photos/music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+*/

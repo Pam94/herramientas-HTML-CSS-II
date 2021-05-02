@@ -1,6 +1,6 @@
 .about-page {
   display: block;
-  width: 100%;
+  min-width: 100%;
   margin: 150px auto;
 }
 
@@ -9,7 +9,11 @@ h1 {
   padding-bottom: 5%;
 }
 
-@supports (display: grid) {
+.about-page__container {
+  text-align: center;
+}
+
+@supports (display: flex) {
   @media (min-width: 42em) and (min-height: 27em) {
 
     .about-page__container {
