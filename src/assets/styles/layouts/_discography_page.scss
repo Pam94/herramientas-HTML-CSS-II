@@ -6,7 +6,7 @@
 
 @supports (display: grid) {
 
-  @media (min-width: 42em) and (min-height: 27em) {
+  @include grid(){
 
     .songs-container{
       display: grid;

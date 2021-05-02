@@ -4,6 +4,16 @@ $breakpoint-phone:    640px;
 $breakpoint-tablet:   768px;
 $breakpoint-desktop: 1024px;
 
+$breakpoint-grid-width: 42em;
+$breakpoint-grid-height: 27em;
+
+@mixin grid(){
+  @media (min-width: $breakpoint-grid-width)
+    and (min-height: $breakpoint-grid-height) {
+    @content;
+  }
+}
+
 @mixin media($media) {
   @if $media == phone {
     @media (max-width: $breakpoint-phone) { @content; }
@@ -17,11 +27,5 @@ $breakpoint-desktop: 1024px;
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop)
     { @content; }
   }
-}
-
-@function column-width($num-of-columns) {
-
-  @return percentaje(1/$num-of-columns);
-
 }
 

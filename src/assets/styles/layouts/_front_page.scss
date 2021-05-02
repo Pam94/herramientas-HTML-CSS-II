@@ -11,7 +11,7 @@
 
 @supports (display: grid) {
 
-  @media (min-width: 42em) and (min-height: 27em) {
+  @include grid(){
 
     .front-page-container {
       display: grid;
