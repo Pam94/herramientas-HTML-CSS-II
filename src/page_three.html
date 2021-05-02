@@ -25,14 +25,13 @@
                         <img class="img-logo" src="./assets/images/Caravan_Jazz.png" />
 
                         <li class="nav-item primary-nav__item">
-                            <a class="primary-nav__link  primary-nav__link--hover" href="./index.html">Home</a>
+                            <a class="nav-link primary-nav__link" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item primary-nav__item">
-                            <a class="primary-nav__link  primary-nav__link--hover" href="./page_two.html">About</a>
+                            <a class="nav-link  primary-nav__link" href="./page_two.html">About</a>
                         </li>
                         <li class="nav-item primary-nav__item">
-                            <a class="primary-nav__link  primary-nav__link--hover"
-                                href="./page_four.html">Discography</a>
+                            <a class="nav-link primary-nav__link" href="./page_four.html">Discography</a>
                         </li>
 
                     </ul>
@@ -63,26 +62,58 @@
             vitae, mattis mauris. Proin luctus ut diam eu condimentum. In et elit quis quam ultricies viverra in eget
             dolor.</p>
 
-        <ul class="numerated-list">
-            <li class="numerated-list__item">
-                <h4>Item 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
-                    iaculis in, gravida
-                    ac leo.</p>
-            </li>
-            <li class="numerated-list__item">
-                <h4>Item 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
-                    iaculis in, gravida
-                    ac leo.</p>
-            </li>
-            <li class="numerated-list__item">
-                <h4>Item 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
-                    iaculis in, gravida
-                    ac leo.</p>
-            </li>
-        </ul>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Item 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
+                        iaculis in, gravida
+                        ac leo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Item 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
+                        iaculis in, gravida
+                        ac leo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Item 3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
+                        iaculis in, gravida
+                        ac leo.
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="left-tip">
             <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
@@ -90,9 +121,11 @@
                 ac leo.</blockquote>
         </div>
 
-        <p class="right-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
+        <p class="right-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada
+            non
             iaculis in, gravida
-            ac leo. Vestibulum id tincidunt ante, vel malesuada ex. Suspendisse metus justo, facilisis a viverra eget,
+            ac leo. Vestibulum id tincidunt ante, vel malesuada ex. Suspendisse metus justo, facilisis a viverra
+            eget,
             tempus eget erat. Maecenas ante lorem, accumsan sit amet fringilla sed, luctus vitae metus. Vivamus eget
             diam est.</p>
 
@@ -106,7 +139,8 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nulla odio, malesuada non
             iaculis in, gravida
-            ac leo. Vestibulum id tincidunt ante, vel malesuada ex. Suspendisse metus justo, facilisis a viverra eget,
+            ac leo. Vestibulum id tincidunt ante, vel malesuada ex. Suspendisse metus justo, facilisis a viverra
+            eget,
             tempus eget erat. Maecenas ante lorem, accumsan sit amet fringilla sed, luctus vitae metus. Vivamus eget
             diam
             est.</p>
