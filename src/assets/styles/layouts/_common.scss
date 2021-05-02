@@ -31,23 +31,11 @@ main {
   border-radius: 5%;
 }
 
-nav {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  min-width: 100%;
-  background-color: $nav-bg-color;
-}
-
 .primary-nav {
   list-style-type: none;
   display: flex;
   flex: 1;
   justify-content: flex-end;
-
-  @include media(phone) {
-    flex-direction: column;
-  }
 }
 
 .img-logo{
@@ -56,21 +44,6 @@ nav {
 
 .primary-nav__item{
   align-self: center;
-}
-
-.primary-nav__link {
-  text-align: center;
-  text-decoration: none;
-  padding: 15px 15px;
-  color: $nav-txt-color;
-
-  @include media(phone) {
-    padding: 10px;
-  }
-
-  &--hover:hover {
-    background-color: $nav-bg-color-hover;
-  }
 }
 
 .secondary-nav {
