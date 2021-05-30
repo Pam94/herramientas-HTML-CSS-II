@@ -6,28 +6,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>PEC3 Pamela Fernández Fernández</title>
+  <title>Caravan Jazz Home</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-red-100 via-red-200 to-red-300" x-data="{ isMobileNavOpen: false }"
+  :class="{ 'overflow-hidden': isMobileNavOpen }">
 
   <header class="sticky top-0 z-50">
     <nav class="bg-gray-900">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="mx-auto sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <button class="inline-flex items-center justify-center" type="button" aria-controls="mobile-menu"
-              aria-expanded="false">
+            <button x-on:click.prevent="isMobileNavOpen = !isMobileNavOpen"
+              class="inline-flex items-center justify-center" type="button"
+              x-bind:aria-label="isMobileNavOpen ? 'Close main menu' : 'Main menu'" aria-label="Main menu"
+              x-bind:aria-expanded="isMobileNavOpen">
 
               <svg xmlns="http://www.w3.org/2000/svg" class="block h-6 w-6" fill="none" viewBox="0 0 24 24"
                 stroke="white">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-
-
-              <svg xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="white">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
 
             </button>
@@ -48,8 +45,8 @@
         </div>
       </div>
 
-      <div class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
+      <div class="sm:hidden" x-show="isMobileNavOpen" @click.away="isMobileNavOpen = false">
+        <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
           <a class="nav-link" href="./page_two.html">About</a>
 
           <a class="nav-link" href="./page_four.html">Discography</a>
@@ -58,7 +55,9 @@
     </nav>
   </header>
 
-  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <script src="./assets/scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <!-- do not remove this line! -->
 </body>
 
 </html>

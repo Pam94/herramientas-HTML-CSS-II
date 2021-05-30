@@ -9,27 +9,23 @@
     <title>Caravan Jazz Discography</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-red-100 via-red-200 to-red-300" x-data="{ isMobileNavOpen: false }"
+    :class="{ 'overflow-hidden': isMobileNavOpen }">
 
     <header class="sticky top-0 z-50">
         <nav class="bg-gray-900">
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
                     <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                        <button class="inline-flex items-center justify-center" type="button"
-                            aria-controls="mobile-menu" aria-expanded="false">
+                        <button x-on:click.prevent="isMobileNavOpen = !isMobileNavOpen"
+                            class="inline-flex items-center justify-center" type="button"
+                            x-bind:aria-label="isMobileNavOpen ? 'Close main menu' : 'Main menu'" aria-label="Main menu"
+                            x-bind:aria-expanded="isMobileNavOpen">
 
                             <svg xmlns="http://www.w3.org/2000/svg" class="block h-6 w-6" fill="none"
                                 viewBox="0 0 24 24" stroke="white">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
-
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none"
-                                viewBox="0 0 24 24" stroke="white">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12" />
                             </svg>
 
                         </button>
@@ -42,20 +38,20 @@
 
                         <div class="hidden sm:block sm:ml-6">
                             <div class="flex space-x-4">
-                                <a class="nav-link" href="./page_two.html">About</a>
+                                <a class="nav-link" href="./index.html">Home</a>
 
-                                <a class="nav-link" href="./page_four.html">Discography</a>
+                                <a class="nav-link" href="./page_two.html">About</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="sm:hidden" id="mobile-menu">
-                <div class="px-2 pt-2 pb-3 space-y-1">
+            <div class="sm:hidden" x-show="isMobileNavOpen" @click.away="isMobileNavOpen = false">
+                <div class="flex flex-col px-2 pt-2 pb-3 space-y-1">
+                    <a class="nav-link" href="./index.html">Home</a>
                     <a class="nav-link" href="./page_two.html">About</a>
 
-                    <a class="nav-link" href="./page_four.html">Discography</a>
                 </div>
             </div>
         </nav>
@@ -63,76 +59,76 @@
 
     <main class="container">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+        <div class="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-4 py-8 px-8">
 
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/reinhart-julian-79-UsUCtTYA-unsplash(1).jpg">
-                <div class="songs-container__details">
-                    <h2>Reinhart</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/reinhart-julian-79-UsUCtTYA-unsplash(1).jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Reinhart</h2>
                     <p>By <a
                             href="https://unsplash.com/@reinhartjulian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Reinhart
                             Julian</a></p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/patrick-perkins-9aSmn1AnEPk-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Perkins</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/patrick-perkins-9aSmn1AnEPk-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Perkins</h2>
                     <p>By <a
                             href="https://unsplash.com/@patrickperkins?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick
                             Perkins</a></p>
                 </div>
             </div>
-            <div class="songs-container__item">
+            <div class="grid-element-text-right">
                 <img class="img-thumbnail" src="assets/images/nasa-rTZW4f02zY8-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Other Galaxy</h2>
+                <div>
+                    <h2 class="tittle-2xlarge">Other Galaxy</h2>
                     <p>By <a
                             href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a>
                     </p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/md-mahdi-xemtYfe2Vwk-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Look at Me</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/md-mahdi-xemtYfe2Vwk-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Look at Me</h2>
                     <p>By <a
                             href="https://unsplash.com/@mahdi17?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Md
                             Mahdi</a>
                     </p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/jarred-clapperton-lDA9qjO_uh8-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Spring Break</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/jarred-clapperton-lDA9qjO_uh8-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Spring Break</h2>
                     <p>By <a
                             href="https://unsplash.com/@jarredkc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jarred
                             Clapperton</a></p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/giorgio-trovato-PdtApuzR_IQ-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Song's Soul</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/giorgio-trovato-PdtApuzR_IQ-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Song's Soul</h2>
                     <p>By <a
                             href="https://unsplash.com/@giorgiotrovato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Giorgio
                             Trovato</a></p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/christopher-campbell-Cp-LUHPRpWM-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Into the Ocean</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/christopher-campbell-Cp-LUHPRpWM-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Into the Ocean</h2>
                     <p>By <a
                             href="https://unsplash.com/@chrisjoelcampbell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher
                             Campbell</a></p>
                 </div>
             </div>
-            <div class="songs-container__item">
-                <img class="img-thumbnail" src="./assets/images/annie-spratt-UktMC6JaM1U-unsplash.jpg">
-                <div class="songs-container__details">
-                    <h2>Love Melody</h2>
+            <div class="grid-element-text-right">
+                <img src="./assets/images/annie-spratt-UktMC6JaM1U-unsplash.jpg">
+                <div>
+                    <h2 class="tittle-2xlarge">Love Melody</h2>
                     <p>By <a
                             href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie
                             Spratt</a></p>
@@ -167,6 +163,10 @@
         </ul>
 
     </footer>
+
+    <script src="./assets/scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- do not remove this line! -->
 </body>
 
 </html>
