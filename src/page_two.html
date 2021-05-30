@@ -11,113 +11,158 @@
 
 <body>
 
-    <header>
+    <header class="sticky top-0 z-50">
+        <nav class="bg-gray-900">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <button class="inline-flex items-center justify-center" type="button"
+                            aria-controls="mobile-menu" aria-expanded="false">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 primary-nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="block h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
 
-                        <img class="img-logo" src="./assets/images/Caravan_Jazz.png" />
 
-                        <li class="nav-item primary-nav__item">
-                            <a class="nav-link primary-nav__link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item primary-nav__item">
-                            <a class="nav-link primary-nav__link" href="./page_three.html">News</a>
-                        </li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="hidden h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
 
-                    </ul>
+                        </button>
+                    </div>
+
+                    <img class="hidden sm:block w-auto" src="./assets/images/Caravan_Jazz.png" />
+
+                    <div
+                        class="absolute right-0 flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+
+                        <div class="hidden sm:block sm:ml-6">
+                            <div class="flex space-x-4">
+                                <a class="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    href="./index.html">Home</a>
+
+                                <a class="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                    href="./page_three.html">News</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a class="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        href="./index.html" aria-current="page">Home</a>
+
+                    <a class="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        href="./page_three.html">News</a>
                 </div>
             </div>
         </nav>
 
+
     </header>
 
-    <main class="about-page">
+    <main class="container mx-auto">
 
-        <h1>Band Members</h1>
+        <div class="block text-center h-10">
+            <h1>Band Members</h1>
+        </div>
 
-        <div class="about-page__container">
+        <div class="flex flex-wrap space-x-4 space-y-2">
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/christian-buehner-DItYlc26zVI-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Christian Buehner</h2>
+            <!--TODO-->
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/christian-buehner-DItYlc26zVI-unsplash.jpg" />
+                    <div class="block text-center">
+                        <!--TODO-->
+                        <h2 class="">Christian Buehner</h2>
                         <h3>Bajista</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@christianbuehner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
-                            to know me</a>
+                        <!--TODO-->
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a
+                                href="https://unsplash.com/@christianbuehner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
+                                to know me</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/dan-ROJFuWCsfmA-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Dan Riot</h2>
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/dan-ROJFuWCsfmA-unsplash.jpg" />
+                    <div class="block text-center">
+                        <h2 class="">Dan Riot</h2>
                         <h3>Teclado</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@dann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
-                            to know me</a>
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a
+                                href="https://unsplash.com/@dann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
+                                to know me</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Sergio de Paulla</h2>
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" />
+                    <div class="block text-center">
+                        <h2 class="">Sergio de Paulla</h2>
                         <h3>Batería</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@sspaula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                            Get to know me</a>
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a
+                                href="https://unsplash.com/@sspaula?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                                Get to know me</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Ayo Ogunseinde</h2>
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg" />
+                    <div class="block text-center">
+                        <h2 class="">Ayo Ogunseinde</h2>
                         <h3>Trompeta</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
-                            to know me</a>
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a
+                                href="https://unsplash.com/@armedshutter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
+                                to know me</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/clarke-sanders-HOQpBGL95Z8-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Clarke Senders</h2>
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/clarke-sanders-HOQpBGL95Z8-unsplash.jpg" />
+                    <div class="block text-center">
+                        <h2 class="">Clarke Senders</h2>
                         <h3>Trombón</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@clar_san?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
-                            to know me</a>
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a
+                                href="https://unsplash.com/@clar_san?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
+                                to know me</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="about-page__item">
-                <div class="card">
-                    <img class="card-img-top" src="assets/images/raj-rana-15Vb4B_ma_s-unsplash.jpg" />
-                    <div class="card-body">
-                        <h2 class="card-title">Raj Rana</h2>
+            <div class="">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img class="block h-auto w-full" src="assets/images/raj-rana-15Vb4B_ma_s-unsplash.jpg" />
+                    <div class="block text-center">
+                        <h2 class="">Raj Rana</h2>
                         <h3>Pianista</h3>
-                        <a class="btn btn-primary"
-                            href="https://unsplash.com/@theranaman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
-                            to know me</a>
+                        <button type="button"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            <a
+                                href="https://unsplash.com/@theranaman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Get
+                                to know me</a></button>
                     </div>
                 </div>
             </div>
@@ -128,31 +173,29 @@
 
     <footer>
 
-        <ul class="secondary-nav">
+        <ul class="flex items-center justify-between">
 
-            <img class="img-logo" src="./assets/images/Caravan_Jazz.png" />
+            <img src="./assets/images/Caravan_Jazz.png" />
 
 
-            <li class="secondary-nav__item">
-                <a class="secondary-nav__link" href="./index.html">Home</a>
+            <li>
+                <a class="text-gray-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+                    href="./index.html">Home</a>
             </li>
-            <li class="secondary-nav__item">
-                <a class="secondary-nav__link" href="./page_two.html">About</a>
+            <li>
+                <a class="text-gray-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+                    href="./page_two.html">About</a>
             </li>
-            <li class="secondary-nav__item">
-                <a class="secondary-nav__link" href="./page_three.html">News</a>
-            </li>
-
-            <li class="secondary-nav__item  secondary-nav__social">
-                <i class="fab fa-google-plus-g"></i>
-            </li>
-
-            <li class="secondary-nav__item  secondary-nav__social">
-                <i class="fab fa-facebook-f"></i>
+            <li>
+                <a class="text-gray-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium"
+                    href="./page_three.html">News</a>
             </li>
 
-            <li class="secondary-nav__item  secondary-nav__social">
-                <i class="fab fa-twitter"></i>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="gray">
+                    <path
+                        d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+                </svg>
             </li>
 
         </ul>
